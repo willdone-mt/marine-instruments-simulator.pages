@@ -9,6 +9,7 @@ initial instruments must be: easy to operate, deploy, and processed as well as c
 - **Marlin**  
   "Only the worthy can catch a marlin"
 - **Manta**
+- **Sirenia**
 
 # Release Date
 1. first quarter 2026: InDev start
