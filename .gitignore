@@ -1,2 +1,11 @@
+# sensitive documents
 .bts/docs/
+
+# Python cache files
+data/__pycache__/
+
+# unused unimportant files
 Experiments/
+
+# developer only
+open_with_vsc.bat
