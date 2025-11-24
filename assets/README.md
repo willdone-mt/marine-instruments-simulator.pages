@@ -1,3 +1,3 @@
 SELF NOTE
 # /assets
-folder to store creative works. Other stuff that will be used for and as visuals and sounds goes here
+Folder to store creative works. Other materials intended for use as visuals and sounds are kept here.

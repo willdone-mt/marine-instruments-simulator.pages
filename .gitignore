@@ -1,5 +1,6 @@
 # sensitive documents
 .bts/docs/
+.bts/learning_playtrough
 
 # Python cache files
 data/__pycache__/

@@ -2,6 +2,8 @@
 
 # Release Date
 
+[!WARNING] maybe need to be postpone +/- year and half
+
 1. late 2025: learning basic programming
 2. first quarter 2026: InDev start
 2. second quarter 2026: closed InDev test
@@ -17,15 +19,19 @@ most of this goals are in order
 
 ## Early Goals
 - Make the software flowchart [✅]
-- Dump ideas in brainstorm
-- Make software do and not do (boundaries)
-- Decide the first targeted instrument
-- learn the targeted instrument's license
+- Dump ideas in brainstorm 
+- Make software do and not do (boundaries) [✅]
 - learn basic programming
+- learn specific programming 
+- make a research and sponsor proposal as an advertisement
+- learn how to do, process,and analyse survey via google form
+- run the form and conclude it
+- Decide the first targeted instrument [✅]
+- learn the targeted instrument's license
 - after an initial instrument have been chosen , make new branch "InDev"
-- make a research and sponsor proposal
+- programm the refraktometer simulation
 
 ## Late Goals
-1. make an advertisements
+1. 
 2. quality and aesthetic, no more complex window opening
 
