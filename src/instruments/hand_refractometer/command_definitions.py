@@ -15,29 +15,29 @@ def open_lid():
     global closedLid
     if closedLid == False:
         print(f"closedLid:{closedLid}")
-        message = "Lid is already opened"
-        print(message)
-        return message, closedLid
+        lidmessage = "Lid is already opened"
+        print(lidmessage)
+        return lidmessage, closedLid
     else:
         closedLid = False
         print(f"closedLid:{closedLid}")
-        message = "Lid is opened"
-        print(message)
-        return message, closedLid 
+        lidmessage = "Lid is opened"
+        print(lidmessage)
+        return lidmessage, closedLid 
 
 def close_lid():
     global closedLid
     if closedLid == True:
         print(f"closedLid:{closedLid}")
-        message = "Lid is already closed"
-        print(message)
-        return message, closedLid
+        lidmessage = "Lid is already closed"
+        print(lidmessage)
+        return lidmessage, closedLid
     else:
         closedLid = True
         print(f"closedLid:{closedLid}")
-        message = "Lid is closed"
-        print(message)
-        return message, closedLid
+        lidmessage = "Lid is closed"
+        print(lidmessage)
+        return lidmessage, closedLid
 
 def calibrate():
     global closedLid
@@ -46,9 +46,9 @@ def calibrate():
     global value
     if closedLid == True:
         print(f"closedLid:{closedLid}")
-        message = "Lid is still closed"
-        print(message)
-        return message, closedLid, calibrated, wiped
+        lidmessage = "Lid is still closed"
+        print(lidmessage)
+        return lidmessage, closedLid, calibrated, wiped
     else:
         calibrated = True
         wiped = False
@@ -62,9 +62,9 @@ def wipe():
     global closedLid
     global wiped
     if closedLid == True:
-        message = "Lid is still closed"
-        print(message)
-        return message
+        lidmessage = "Lid is still closed"
+        print(lidmessage)
+        return lidmessage
     else:
         wiped = True
         print(f"wiped:{wiped}")
@@ -104,9 +104,9 @@ def peek():
     global value
     if closedLid == False:
         print(f"closedLid:{closedLid}")
-        message = "Lid is still opened"
-        print(message)
-        return message, value
+        lidmessage = "Lid is still opened"
+        print(lidmessage)
+        return lidmessage, closedLid
     if sampled == False and calibrated == True:
         print(f"sampled:{sampled}")
         value = 0
