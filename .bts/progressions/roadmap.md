@@ -8,9 +8,11 @@
 2. first quarter 2026: InDev start [✅]
     - post-this:
         - Make all things work MVP
+        - merge InDev to Main
+        - first release as InDev
         - started InDev versioning
 2. second quarter 2026: closed InDev test
-    - post this: 
+    - post-this: 
         - make sure all "cables" work
         - add WQC
 3. mid 2026: public alpha test
