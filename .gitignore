@@ -10,5 +10,6 @@
 
 # unused unimportant files
 Experiments/
+build/build_temp
 
 # developer only
