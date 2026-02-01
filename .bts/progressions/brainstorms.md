@@ -98,7 +98,7 @@ possible "cable" that would be needed for:
 - Make permissions for possible developers
 - application is open-access/free, but the source code is closed
 
-# Nested Repository
+# Nested Repository [✅]
 
 Marine-Instrument-Simulator
   /assets
