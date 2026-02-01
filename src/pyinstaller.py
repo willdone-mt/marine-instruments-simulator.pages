@@ -7,7 +7,7 @@ PyInstaller.__main__.run([
     '--add-data=src/instruments/handrefractometer:handrefractometer',
     '--workpath=build/build_temp',
     '--distpath=build/dist',
-    '--noconsole',
+    # '--noconsole',
     # '--hide-console=hide-early',
     '--name=SIRENIA'
 ])
