@@ -55,7 +55,7 @@ I intended to make it as an warmer up before student/user handling the real frag
 
 # 🐙 Tech Stack
 
-[WIP]
+**Main Programming Language Used: Python 🐍** 
 
 # 🧰 Getting Started
 

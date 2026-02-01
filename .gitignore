@@ -1,10 +1,12 @@
+# list of gitignore
+# https://www.geeksforgeeks.org/git/git-ignore-and-gitignore/
+
 # sensitive documents
 .bts/docs/
 .bts/learning_playtrough
 
 # Python cache files
 **/__pycache__/
-src/instruments/hand_refractometer/__pycache__
 
 # unused unimportant files
 Experiments/

@@ -28,7 +28,7 @@ What the software probably would do:
 # Programming Language to Use
 Possible and Considerable programming language to use
 
-- **Python** (data and game dev)  
+- **Python** (data and game dev, main language)  
 - **C++** (data and game dev)  
 - **HTML** (frontend)  
 - **JavaScript** (backend)  
@@ -67,14 +67,14 @@ initial instruments must be: easy to operate, deploy, and processed as well as c
   
   College Students, especially in marine science, globally
 
-  (needs to be open-access aka free, but still closed source)
-  (needs a easy non-complex instant instalation)
+  (needs to be open-access aka free, but still closed source) **EULA**
+  (needs a easy non-complex instant instalation) **Compiler**
   (needs sites to open issues)
 
 - How long the software is useful
 
   Forever?  
-  Maintanance will mostly not happen daily nor monthly, maybe bimonthly. Will probably host potential worthy developer after certain amount of time
+  Maintanance will mostly not happen daily nor even monthly, maybe bimonthly. Will probably host potential worthy developer after certain amount of time
 
 # Plug and Play kinda Instrument Packages
 
@@ -86,6 +86,8 @@ possible "cable" that would be needed for:
 - data output (instrument's output)
 - instruction input
 
+![what i mean is](image.png)
+
 # Readmes
 - Sirenia will be a simulator software focusing on replicating the operation of marine scientific instruments in real-life field.
 - This software also planned to be able to open third-party software such as the instrument's launcher and data pre-processing software.
@@ -95,3 +97,14 @@ possible "cable" that would be needed for:
 # Permissions
 - Make permissions for possible developers
 - application is open-access/free, but the source code is closed
+
+# Nested Repository [✅]
+
+Marine-Instrument-Simulator
+  /assets
+  /src
+  /pages (marine-simulator.pages)
+    /docs
+      /news
+      /wiki
+    /watchamacallit
