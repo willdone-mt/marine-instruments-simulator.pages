@@ -6,15 +6,17 @@ from tkinter import ttk
 import subprocess as sp
 import webbrowser as wb
 
+from instruments.hand_refractometer import handrefractometer_ui  
+
+def run_handrefractometer_ui():
+    handrefractometer_ui.run_ui()
+
 '''
 Problems: 
 - master.py malah menjalankan import di directorynya dan bukan directory modul2nya
 - ketika handrefractometer_ui dijalankan dari master.py, handrefractometer_ui kehilangan ttk-nya
 
-from src.instruments.hand_refractometer import handrefractometer_ui  
 
-def run_handrefractometer_ui():
-    handrefractometer_ui.run_ui()
 '''
 
 def open_news():
