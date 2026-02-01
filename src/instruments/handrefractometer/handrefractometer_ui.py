@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
-import command_definitions as cd
-import value_generator as vg
+from handrefractometer.handrefractometer_module import command_definitions as cd
 
 
 def run_ui():
