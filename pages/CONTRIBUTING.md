@@ -12,9 +12,17 @@ End Users contribute to this project, mainly, by reporting and suggesting. These
 
 - **Ensure the bug was not already reported** by searching on GitHub under [Issues](https://github.com/willdone-mt/marine-instruments-simulator.pages/issues).
 
-- If you're unable to find an open issue addressing the problem, [open a new one](https://github.com/willdone-mt/marine-instruments-simulator.pages/issues/new). Be sure to include a **title and clear description**, as much relevant information as possible, and a **code sample** or an **executable test case** demonstrating the expected behavior that is not occurring.
+- If you're unable to find an open issue addressing the problem, open a new one via one of [these media](#preferred-medias). Be sure to include a **title and clear description**, as much relevant information as possible, and a **code sample** or an **executable test case** demonstrating the expected behavior that is not occurring.
 
-#### **Do you intend/suggest to add a new feature or change an existing one?**
+#### **Do you intend to add a new feature or change an existing one?**
+
+- Again, **Ensure the suggestion was not already submitted** by searching on GitHub under [Issues](https://github.com/willdone-mt/marine-instruments-simulator.pages/issues) labeled as `suggestion`
+
+- If you're unable to find an open issue addressing the general idea of your suggestion, open a new one via one of [these media](#preferred-medias) and give the label `suggestion`. Be sure to include a **title and clear description**, as much relevant information as possible, and a **code sample** or an **executable test case** demonstrating the expected behavior.
+
+# Preferred Medias
+
+Only GitHub Issue that are currently active and supported by developers. Other medias still work in progress.
 
 ## Online Forms
 

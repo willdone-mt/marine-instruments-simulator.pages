@@ -28,7 +28,7 @@ this repository is specially public for allowing you, clients and end users, to 
    * [🎯 Features](#-features)
 - [🧩 Tech Stack](#-tech-stack)
 - [🧰 Getting Started](#-getting-started)
-   * [‼️ System Requirements](#-system-requirements)
+   * [‼️ System Requirements](#️-system-requirements)
    * [⚙️ Downloading](#-downloading)
    * [🧪 Running](#-running)
 - [🪜 Development](#-development)
@@ -56,7 +56,7 @@ I intended to make it as an warmer up before student/user handling the real frag
 
 ## ⛵ Features
 
-- Instruments Available:
+- Implemented Instruments:
     - Hand Refractometer
 
 # 🐙 Tech Stack
@@ -65,15 +65,22 @@ I intended to make it as an warmer up before student/user handling the real frag
 
 # 🧰 Getting Started
 
+Read this for end users to succesfully run the app!
+
 ## ‼️ System Requirements
-So far its only been tested on developers' device. However, only the RAM which has been recorded and it's not exceeded than `SIRENIA.exe`'s file size.
+So far its only been tested on developers' devices. However, only the RAM which has been recorded and it's not exceeded than `SIRENIA.exe`'s file size.
 
 ## ⚙️ Downloading
-[WIP]
+
+You can directly download the latest version of `SIRENIA.exe` from [here]() or you can access the tags available on the sidebar on the home page of the repository for specific version. 
+
+Although, it is recommended that you also download this repository linked to the version you downloaded to help you go trough the app or if there are any dependencies located in this repository.
 
 ## 🚤 Running
 
-To run the software, simply find the Sirenia.exe and double click it.
+To run the software, simply find the Sirenia.exe and double click it. It should be running just fine.
+
+Again, it is recommended to run the app in the extracted zip of the repository to ensure all depedencies is be run.
 
 # 🪜 Development
 
@@ -92,7 +99,6 @@ See [`contributing.md` for ways to get started. here!](./CONTRIBUTING.md)
 
 Please read the [Code of Conduct](https://github.com/Louis3797/awesome-readme-template/blob/master/CODE_OF_CONDUCT.md)
 
-<!-- FAQ -->
 ## ❓ FAQ
 
 # Credits

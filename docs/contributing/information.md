@@ -9,10 +9,11 @@
 - release and tag
 
 ## main
-- for editing and storing:
+- for editing:
     - developer side documentations
     - non-coding only
     - small hotfixes
+- merge and store other branches
 - tag only
     
 ## InDev
@@ -40,7 +41,7 @@ All expected creative works should be made by designer/developers of this softwa
 
 ## /build
 
-pyinstaller.py script
+pyinstaller.py scripts, and temporary builds
 
 ## /docs
 
@@ -50,7 +51,7 @@ folder ```/docs``` that located in this repository contains  developer-side docu
 
 ## /pages
 
-where public subtree repository located.
+where public subtree repository located. and also place for final executable file and dependencies.
 
 all things here are dedicated for clients and some files that be used by the exe.
 
