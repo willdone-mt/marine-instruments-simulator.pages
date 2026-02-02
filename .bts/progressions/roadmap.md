@@ -10,6 +10,7 @@
         - Make all things work MVP [✅]
         - merge InDev to Main [✅]
         - first release as InDev [✅]
+        - focus on documentation in main until all tidy up
         - started InDev versioning
 2. second quarter 2026: closed InDev test
     - post-this: 
