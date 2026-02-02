@@ -6,7 +6,7 @@ PyInstaller.__main__.run([
     'src/main_ui.py',
     '--add-data=src:src',
     '--workpath=build/build_temp',
-    '--distpath=build/dist',
+    '--distpath=pages',
     # '--noconsole',
     # '--hide-console=hide-early',
     '--name=SIRENIA'
