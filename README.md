@@ -4,7 +4,7 @@
 
 # WELCOME TO SIRENIA COMMUNITY PAGES!
 
-this repository is specially public to allow you report issues and access the latest version of the product!
+this repository is specially public for allowing you, clients and end users, to access the latest version of the product and report issues!
 
 
   <img src="assets/images/logo.png" alt="logo" width="200" height="auto" />
@@ -28,7 +28,7 @@ this repository is specially public to allow you report issues and access the la
    * [🎯 Features](#-features)
 - [🧩 Tech Stack](#-tech-stack)
 - [🧰 Getting Started](#-getting-started)
-   * [‼️ Prerequisites](#-prerequisites)
+   * [‼️ System Requirements](#-system-requirements)
    * [⚙️ Downloading](#-downloading)
    * [🧪 Running](#-running)
 - [🪜 Development](#-development)
@@ -65,8 +65,8 @@ I intended to make it as an warmer up before student/user handling the real frag
 
 # 🧰 Getting Started
 
-## ‼️ Prerequisites
-Before downloading this software, you must:
+## ‼️ System Requirements
+So far its only been tested on developers' device. However, only the RAM which has been recorded and it's not exceeded than `SIRENIA.exe`'s file size.
 
 ## ⚙️ Downloading
 [WIP]
