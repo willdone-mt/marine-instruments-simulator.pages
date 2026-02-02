@@ -3,8 +3,10 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".
 
 import tkinter as tk
 from tkinter import ttk
+from ttkthemes import ThemedTk
 import subprocess as sp
 import webbrowser as wb
+import themes as th
 
 from instruments.handrefractometer import handrefractometer_ui  
 
@@ -39,16 +41,12 @@ def run_handrefractometer_ui():
 # Main TKinter functions =====
 
 # Main Window
-root = tk.Tk()
+root = ThemedTk(theme="scidblue")
 root.title("SIRENIA - Home Menu")
 root.geometry("800x600")
 
 # ttk Style
-style = ttk.Style()
-style.configure("BW.TPanedwindow", foreground="grey", background="white", relief="raised")
-style.configure("TLabel", foreground="black", background="white", font=("Calibri", 10, "bold"))
-style.configure("1.TLabel", foreground="black", background="white", font=("Verdana", 16, "bold"), relief="flat", borderwidth=2)
-style.configure("2.TLabel", foreground="black", background="white", font=("Verdana", 14, "bold"), relief="flat", borderwidth=2)
+th.apply_theme()
 
 # =====
 

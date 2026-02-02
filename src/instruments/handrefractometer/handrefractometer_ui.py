@@ -1,13 +1,17 @@
+import sys, os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
+
 import tkinter as tk
 from tkinter import ttk
+from ttkthemes import ThemedTk
+from main import general_instrument_ui
+
 try:
     from .handrefractometer_module import command_definitions as cd
 except ImportError:
     from handrefractometer_module import command_definitions as cd
 
 def run_ui(parent_root=None):
-    # Can we make these rows between =#=== as an external module file? 
-    # =#====
 
     # defining functions =====
     def open_lid():
@@ -50,55 +54,31 @@ def run_ui(parent_root=None):
 
     # Main TKinter functions =====
     # Main Window
+
+    # Can we make these rows between =#=== as an external module file? 
+    # =#====
     if parent_root is None:
-        # kalau dijalankan langsung
-        HRroot = tk.Tk()
+        ui_root = ThemedTk(theme="scidblue")
     else:
-        # kalau dipanggil dari master.py
-        HRroot = tk.Toplevel(parent_root)
+        ui_root = tk.Toplevel(parent_root)
 
-    HRroot.title("HandRefractometer MVP Simulator")
-    HRroot.geometry("1760x990")
-    HRroot.resizable(False, False)
+    ui_root.title("HandRefractometer MVP Simulator")
+    ui_root.geometry("1760x990")
 
-    # ttk Style
-    style = ttk.Style()
-    style.configure("BW.TPanedwindow", foreground="grey", background="white", relief="raised")
-    style.configure("TLabel", foreground="black", background="white", font=("Calibri", 10, "bold"))
-    style.configure("1.TLabel", foreground="black", background="white", font=("Verdana", 16, "bold"), relief="flat", borderwidth=2)
-    style.configure("2.TLabel", foreground="black", background="white", font=("Verdana", 14, "bold"), relief="flat", borderwidth=2)
+    title = "Hand Refractometer"
+    paned_buttons, paned_HRmain, paned_info, paned_labels = general_instrument_ui.run_instrument_ui(ui_root, title)
 
-    # Paned Windows
-    paned_buttons = ttk.PanedWindow(HRroot, orient=tk.HORIZONTAL)
-    paned_buttons.place(relx=0.01, y=80, anchor="nw")
-    paned_buttons.config(width=250, height=150, style="BW.TPanedwindow")
-
-    paned_info = ttk.PanedWindow(HRroot, orient=tk.HORIZONTAL)
-    paned_info.place(relx=0.01, rely=0.5, anchor="nw")
-    paned_info.config(width=250, height=150, style="BW.TPanedwindow")
-
-    paned_HRmain = ttk.PanedWindow(HRroot, orient=tk.HORIZONTAL)
-    paned_HRmain.place(relx=0.5, y=80, anchor="n") 
-    paned_HRmain.config(width=1100, height=640, style="BW.TPanedwindow")
-
-    paned_labels = ttk.PanedWindow(HRroot, orient=tk.HORIZONTAL)
-    paned_labels.place(relx=0.5, rely=0.95, anchor="s")
-    paned_labels.config(width=1100, height=150, style="BW.TPanedwindow")
-    # =====
-
-    # Widgets =====
+    # Widgets ===== Some of the widgets can be modulized
 
     # Titles
-    label_title = ttk.Label(HRroot, text="===== HAND REFRACTOMETER =====", style="1.TLabel")
-    label_title.place(relx=0.5, y=10, anchor='center')
 
-    label_title_paned_buttons = ttk.Label(HRroot, text="=== Actions ===", style="2.TLabel")
-    label_title_paned_buttons.place(relx=0.01, y=40, anchor='nw')
 
-    label_title_paned_HRmain = ttk.Label(HRroot, text="=== Main Window ===", style="2.TLabel")
+
+
+    label_title_paned_HRmain = ttk.Label(ui_root, text="=== Main Window ===", style="2.TLabel")
     label_title_paned_HRmain.place(relx=0.5, y=40, anchor='n')
 
-    label_title_paned_labels = ttk.Label(HRroot, text="=== Status Messages ===", style="2.TLabel")
+    label_title_paned_labels = ttk.Label(ui_root, text="=== Status Messages ===", style="2.TLabel")
     label_title_paned_labels.place(relx=0.5, rely=0.78, anchor='s')
 
     # Texts
@@ -119,16 +99,16 @@ def run_ui(parent_root=None):
     button_peek = ttk.Button(paned_buttons, text="Peek", command=peek)
     # =====
 
-    # =#====
 
-    # Layouts =====
+    # Layouts ===== maybe these parameter layouts can be modulized
 
     # paned_HRmain group
     label_message.place(x=10, y=10)
     label_lid.place(x=10, y=50)
     label_value.place(relx=0.5, rely=0.5, anchor="center")
 
-    # paned_buttons group
+    # paned_buttons group 
+
     label_group_func.grid(row=0, column=0, padx=5, columnspan=3, sticky="w")
     button_open_lid.grid(row=1, column=0, padx=5, pady=5)
     button_close_lid.grid(row=1, column=1, padx=5, pady=5)
@@ -142,7 +122,7 @@ def run_ui(parent_root=None):
     button_peek.grid(row=5, column=0, padx=5, pady=10)
     # =====
 
-    HRroot.mainloop()
+    ui_root.mainloop()
 
 if __name__ == "__main__": 
     run_ui()
