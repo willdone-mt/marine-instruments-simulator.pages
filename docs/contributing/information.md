@@ -34,7 +34,7 @@
 
 ## /assets
 
-Folder to store creative works. Other materials intended for use as visuals and sounds are kept here.
+Folder to store creative works. Other materials intended for use as visuals and sounds are kept here first, then picked the best to be placed in src/assets/. But mostly will be used for raw file of artwork that cannot contain privacy information.
 
 All expected creative works should be made by designer/developers of this software and should be licensed with CC BY SA
 
@@ -57,6 +57,12 @@ all things here are dedicated for clients and some files that be used by the exe
 ## /src
 
 where are all be build :)
+
+### /instruments
+
+folders that acts as module/ packages, contains file that replicate/simulate the operation of certain instruments
+
+
 
 # Changelogs
 
@@ -87,3 +93,9 @@ where are all be build :)
 
 
 ```
+
+# Workflows
+
+- check virus
+- merging
+- tag and release

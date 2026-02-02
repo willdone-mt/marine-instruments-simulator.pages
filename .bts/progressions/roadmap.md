@@ -47,3 +47,27 @@ most of this goals are in order
 1. 
 2. quality and aesthetic, no more complex window opening
 
+# To Do
+
+- tidy documentation for today
+- make the window resizable
+- hand refractometer
+    - add action "point to light source"
+        - time-based mechanism
+    - add images
+        - change image each time action
+    - make change position of an image based on value working
+    - 
+- Fix "cables"
+    - yg gk bisa dikekali:
+        - buttons
+        - labels
+    - yg bisa kekal cuman:
+        - window size
+        - paned windows
+        - themes
+        - 
+- How do I know what dependencies, files, or specifications my PyInstaller‑built executable actually needs to run correctly?
+- can an issue be made in a public subtree repository sync/appear into private parent repository  with additional tags?
+
+
