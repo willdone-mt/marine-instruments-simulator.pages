@@ -59,8 +59,16 @@ I intended to make it as an warmer up before student/user handling the real frag
 
 # 🧰 Getting Started
 
+This repository is intended for you, developers (which deals with codes and arts) and not for clients/end users. So, to make sure all files in this repository works as intended, please read this section carefully.
+
 ## ‼️ Prerequisites
-Before downloading this software, you must:
+There's a file called `pyproject.toml` here which tells what the source code needs to run correctly. But generally, here are the modules used by the source code:
+- Python
+- Numpy
+- Pandas
+- TtkThemes
+- PyInstaller
+- Poetry
 
 ## ⚙️ Downloading
 [WIP]

@@ -1,9 +1,7 @@
-Tutorial and Guide for client contributors
+# CONTRIBUTING GUIDELINES FOR END USERS
 
-General and Comprehensive Guideline for Contributors.
-for more complete and spesific, go here (in /docs/)
+Found problems? Bugs? Issue you encountered with this repository or the app itself? Read this document to help us help you!
 
-- each folders mean
-- naming systems
+# How End Users Can Contribute to This Project
 
-# Report
+End Users contribute to this project, mainly, by reporting and suggesting. These actions can be done via Online Forms (not yet stated), this repository GitHub issue, and Private Message.
