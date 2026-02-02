@@ -1,5 +1,9 @@
 # NEWS!
 
+# 2026/02/02
+
+![20260202-1000-43 0651738](https://github.com/user-attachments/assets/a432357d-4cb7-4432-a259-c7a7525771f9)
+
 # 2026/01/31
 ![Screen Recording 2026-01-31 071814](https://github.com/user-attachments/assets/85a13b79-f9df-48f0-aa51-0826f3e02456)
 ## What is left to do
