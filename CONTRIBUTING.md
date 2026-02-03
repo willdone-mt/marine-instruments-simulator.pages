@@ -1,4 +1,4 @@
-# CODE CONTRIBUTORS GUIDELINES
+# CONTRIBUTORS GUIDELINES FOR DEVELOPERS
 
 General and Comprehensive Guideline for Contributors.
 for more complete and spesific, go [here (in /docs/contributing/)](./docs/contributing)

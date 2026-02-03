@@ -83,4 +83,22 @@ In documenting and developing SIRENIA exe, imagine all files even in the deepest
 
 Folders are used to group files based on their purpose.
 
-- 
+- A file is named with at least its entity and its role which separated by an underscore `_` and ends with it's extension. 
+
+    - **Entity** = the subject, tool, or concept (e.g., `handrefractometer`, `changelog`, `workflow`).  
+    - **Role** = the function or purpose (`ui`, `action`, `guide`).  
+    - **Extension** = file type (`.py`, `.md`, etc.). 
+
+    Entity and role name with multiple words are distinguished by the capital letter of the second word of the sentence.
+
+    `<entityName>_<roleName>.<extension>` or `<roleName>_<entityName>.<extension>`
+
+    Examples:
+
+    - `handrefractometer_ui.py`
+    - `handrefractometer_action.py`
+    - `changelog_guide.md`
+    - `workflow_guide.md`
+
+    However, this naming convention is purely encouraged aestethic.
+
