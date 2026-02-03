@@ -8,3 +8,4 @@ for more complete and spesific, go [here (in /docs/contributing/)](./docs/contri
 # WIP TODO
 - each folders mean
 - naming systems
+- CLA

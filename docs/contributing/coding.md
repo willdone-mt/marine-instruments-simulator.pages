@@ -8,8 +8,19 @@
 
 Pattern and Repeating Codes
 
+- always define and declare functions and variables after imports. if cant, put it exactly above the code that used it for readability.
+
+- Put codes that repeatingly found in most files in their own files, then import it.
+
 # Readability
 
+- the general order for coding is:
+    1. imports
+    2. defining and declaring
+    3. main codes
+    
+    mean while debugging codes can be everywhere
+    
 - We ALWAYS put spaces after list items and method parameters (`[1, 2, 3]`, not `[1,2,3]`), around operators (`x += 1`, not `x+=1`), and around hash arrows.
 
 # Encouraged Aestethic
@@ -25,7 +36,7 @@ This is done because the main designer of this project arent so educated in codi
             another different indent
     ```
 
-- We put comments to group rows of code with a same topic, like headings, and place a blank line above the comments. comments for grouping doesnt follow the code's indentations. 
+- We put comments to group rows of code with a same topic, like headings, and place a blank line above it. comments for grouping doesnt follow the code's indentations. 
     ```python
     # TOPIC TITLE =====
     rows of codes with same topic
