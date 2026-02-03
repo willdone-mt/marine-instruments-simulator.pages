@@ -7,7 +7,7 @@ from src import themes as th
 
 def run_instrument_ui(root, title):
     # ttk Style
-    th.apply_theme(debug=1)
+    th.apply_theme()
 
     # Paned Windows
     
@@ -16,7 +16,7 @@ def run_instrument_ui(root, title):
     paned_buttons.config(style="BW.TPanedwindow")
 
     paned_info = ttk.PanedWindow(root, orient=tk.HORIZONTAL)
-    paned_info.place(relx=0.01, rely=0.95, anchor="sw", relwidth=0.17, relheight=0.30)
+    paned_info.place(relx=0.01, rely=0.65, anchor="nw", relwidth=0.17, relheight=0.3)
     paned_info.config( style="BW.TPanedwindow")
 
     paned_HRmain = ttk.PanedWindow(root, orient=tk.HORIZONTAL)
@@ -34,6 +34,9 @@ def run_instrument_ui(root, title):
 
     label_title_paned_buttons = ttk.Label(root, text="=== Actions ===", style="2.TLabel")
     label_title_paned_buttons.place(relx=0.01, y=40, anchor='nw')
+
+    label_title_paned_HRmain = ttk.Label(root, text="=== Main Window ===", style="2.TLabel")
+    label_title_paned_HRmain.place(relx=0.5, y=40, anchor='n')
 
     return paned_buttons, paned_HRmain, paned_info, paned_labels
 
