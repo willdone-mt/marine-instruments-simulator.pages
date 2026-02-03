@@ -1,4 +1,0 @@
-# Ignore build junk, but allow executables
-*.pyc
-__pycache__/
-build/
