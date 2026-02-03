@@ -1,3 +1,6 @@
+import time
+tic = time.perf_counter()
+
 import sys, os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 
@@ -38,7 +41,7 @@ def open_githubissue():
 def run_handrefractometer_ui():
     handrefractometer_ui.run_ui(root)
 
-# Main TKinter functions =====
+
 
 # Main Window
 root = ThemedTk(theme="scidblue")
@@ -94,5 +97,11 @@ canvas = tk.Canvas(root, width=800, height=600)
 canvas.create_text(400, 300, text=ascii_art, font=("consolas", 12), anchor="s")
 canvas.place(relx=0.5, rely=1, anchor="center")
 
-#
+# calculate loadtime =====
+
+toc = time.perf_counter()
+loadtime = round((toc - tic), ndigits=2)
+print(f"SIRENIA needs {loadtime} seconds to load")
+# =====
+
 root.mainloop()
