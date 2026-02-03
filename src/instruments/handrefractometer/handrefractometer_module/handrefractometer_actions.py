@@ -120,57 +120,59 @@ def sample():
 
     return closedLid, calibrated, wiped, sampled, pointed, peeking, value, message
 
-def point_to_lightsource():
+def point_to_lightsource(remaining, total=15):
+    """
+    Calculate pointed value for a given remaining countdown step.
+    Returns updated state and message.
+    """
+    global pointed
+    if remaining >= 0:
+        pointed = (remaining / total) * 10
+        message = f"pointed:{pointed:.2f}"
+        print(message)
+    else:
+        message = "EMPTY"
+    
+    return closedLid, calibrated, wiped, sampled, pointed, peeking, value, message
 
-    global closedLid, calibrated, wiped, sampled, pointed, peeking, value
-    pointed = 10
-
-    for remaining in clocked.countdown_timer(15):
-        pointed = (remaining / 15) * 10   # scale to 10
-        print(f"pointed:{pointed}")
-        yield pointed   # yield outward
-
-    message = "EMPTY"
-    return closedLid, calibrated, wiped, sampled, peeking, pointed, value, message
 
 def peek():
-    
     global closedLid, calibrated, wiped, sampled, pointed, peeking, value
-    message = "Peeking"
 
-    if closedLid == False:
-        peeking = True
-        print(f"closedLid:{closedLid}")
-        message = "Lid is still opened"
+    peeking = True 
+
+    if closedLid:
+
+        message = "Lid is still closed"
         print(message)
 
-    if pointed > 1:
-        if sampled == False and calibrated == True:
-            peeking = True
-            print(f"sampled:{sampled}")
-            value = 0
-            message = f"Value: {value}"
-            print(message)
+    elif pointed <= 1:
 
-        if sampled == True:
-            peeking = True
-            print(f"sampled:{sampled}")
-            value = value
-            message = f"Value: {value}"
-            print(message)
-
-        elif pointed <= 1:
-            peeking = True
-            print(f"pointed={pointed}")
-            message = "point to a light source first"
-            print(message)
+        message = "Point to a light source first"
+        print(f"pointed={pointed}")
+        print(message)
 
     else:
-        peeking = True
-        message = "Something Wronnk"
-        print(message)
-        
+
+        if not sampled and calibrated:
+            value = 0
+            message = f"Value: {value}"
+            print(f"sampled:{sampled}")
+            print(message)
+
+        elif sampled:
+
+            message = f"Value: {value}"
+            print(f"sampled:{sampled}")
+            print(message)
+
+        else:
+
+            message = "Something wrong"
+            print(message)
+
     return closedLid, calibrated, wiped, sampled, pointed, peeking, value, message
+
 
 def test_run():
     print("command_defintion is running")

@@ -52,22 +52,24 @@ def run_ui(parent_root=None):
             label_value.config(text=f"You got the number {value}")
 
     def point_to_lightsource():
-        closedLid, calibrated, wiped, sampled, pointed, peeking, value, message= handrefractometer_actions.point_to_lightsource()
-        label_message.config(text=message)
+        countdown = 15
 
+        def step(remaining):
+            closedLid, calibrated, wiped, sampled, pointed, peeking, value, message = \
+                handrefractometer_actions.point_to_lightsource(remaining, countdown)
+
+            # update UI
+            label_info.config(text=message)
+
+            if remaining >= 0:
+                # schedule next step after 1 second
+                label_message.after(1000, step, remaining - 1)
+
+        step(countdown)
 
     def test_run():
         print("hand_refractometer is running")
 
-    # =====
-
-    # HOW TO MAKE EVERY PLACEMENT RELATIVE AND RESPECTIVE TO  WINDOW SIZE AND A VALUE???
-
-    # Main TKinter functions =====
-    # Main Window
-
-    # Can we make these rows between =#=== as an external module file? 
-    # =#====
     if parent_root is None:
         ui_root = ThemedTk(theme="scidblue")
     else:
@@ -88,6 +90,7 @@ def run_ui(parent_root=None):
 
     # Texts
     label_message = ttk.Label(paned_labels, text="Hand Refractometer Simulator")
+    label_info = ttk.Label(paned_labels, text="Waiting")
     label_lid = ttk.Label(paned_labels, text="Lid Status")
     label_value = ttk.Label(paned_HRmain, text="What Value do you get?")
 
@@ -110,7 +113,8 @@ def run_ui(parent_root=None):
 
     # paned_HRmain group
     label_message.place(x=10, y=10)
-    label_lid.place(x=10, y=50)
+    label_info.place(x=10,y=50)
+    label_lid.place(x=10, y=70)
     label_value.place(relx=0.5, rely=0.5, anchor="center")
 
     # paned_buttons group 
