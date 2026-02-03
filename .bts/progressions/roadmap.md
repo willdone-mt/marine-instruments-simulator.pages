@@ -49,11 +49,12 @@ most of this goals are in order
 
 # To Do
 
-- tidy documentation for today
+- tidy documentation for today [Almost]
+- Learn Tkinter
 - make the window resizable
 - hand refractometer
-    - add action "point to light source"
-        - time-based mechanism
+    - add action "point to light source" [✅]
+        - time-based mechanism [brokenly implemented]
     - add images
         - change image each time action
     - make change position of an image based on value working
@@ -62,11 +63,12 @@ most of this goals are in order
     - yg gk bisa dikekali:
         - buttons
         - labels
+        - groups
     - yg bisa kekal cuman:
         - window size
         - paned windows
         - themes
-        - 
+        - group template
 - How do I know what dependencies, files, or specifications my PyInstaller‑built executable actually needs to run correctly?
 - can an issue be made in a public subtree repository sync/appear into private parent repository  with additional tags?
 
