@@ -1,5 +1,5 @@
 import numpy as np
-import matplotlib.pylab
+import matplotlib
 from matplotlib.pylab import randint
 
 def random_value():
@@ -7,3 +7,4 @@ def random_value():
 
 def fixed_value():
     return (30)
+    
