@@ -1,0 +1,21 @@
+[project]
+name = "sirenia"
+version = "0.0.2"
+description = ""
+authors = [
+    {name = "WillDone-MT",email = "lorem@ipsum.com"}
+]
+license = {text = "EULA"}
+readme = "README.md"
+requires-python = ">=3.13, <3.15"
+dependencies = [
+    "numpy (>=2.4.2,<3.0.0)",
+    "pandas (>=3.0.0,<4.0.0)",
+    "ttkthemes (>=3.3.0,<4.0.0)",
+    "pyinstaller (>=6.18.0,<7.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
